@@ -87,7 +87,10 @@ body {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-  background: #fff;
+  /* keep this band white even under browser auto dark-mode */
+  background-color: #fff !important;
+  color-scheme: light;
+  forced-color-adjust: none;
   border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: center;
@@ -97,8 +100,7 @@ body {
 .hero-stamp {
   width: min(620px, 90vw);
   height: auto;
-  /* melt the paper background of the stamp into the white band */
-  mix-blend-mode: multiply;
+  /* transparent-background PNG: stays legible on any band color */
 }
 
 /* ---- hero ---- */

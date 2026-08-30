@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js';
 
-const LOGO = '/assets/img/image_kaia_logo_stamp.jpeg';
+const LOGO = '/assets/img/image_kaia_logo_stamp.png';
 
 // Ordered as requested: adventure → custom → puzzles → publishing
 const sections = [
