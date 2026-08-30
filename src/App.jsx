@@ -67,8 +67,10 @@ export default function App() {
       </header>
 
       <main id="top">
-        <section class="hero">
+        <div class="logo-band">
           <img class="hero-stamp" src={LOGO} alt="Kaia & Tata Publishing — Puzzles and Books Company" />
+        </div>
+        <section class="hero">
           <h1>Puzzles &amp; books that take kids places.</h1>
           <p class="subtitle">
             Kaia &amp; Tata Publishing makes coloring books, custom stories, and

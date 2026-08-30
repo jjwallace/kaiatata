@@ -81,17 +81,29 @@ body {
   color: var(--ink);
 }
 
+/* ---- logo band (full-bleed white strip across the sand) ---- */
+.logo-band {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+}
+.hero-stamp {
+  width: min(620px, 90vw);
+  height: auto;
+  /* melt the paper background of the stamp into the white band */
+  mix-blend-mode: multiply;
+}
+
 /* ---- hero ---- */
 .hero {
   text-align: center;
-  padding: 64px 0 40px;
-}
-.hero-stamp {
-  width: min(340px, 78vw);
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 8px;
-  filter: drop-shadow(0 8px 20px rgba(107, 63, 29, 0.18));
+  padding: 48px 0 40px;
 }
 .hero h1 {
   font-size: clamp(34px, 6vw, 58px);
