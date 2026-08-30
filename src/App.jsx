@@ -1,6 +1,7 @@
 import { createSignal } from 'solid-js';
 
 const LOGO = '/assets/img/image_kaia_logo_stamp.png';
+const TITLE = '/assets/img/img_kaia_top_title_t.png';
 
 // Ordered as requested: adventure → custom → puzzles → publishing
 const sections = [
@@ -68,7 +69,7 @@ export default function App() {
 
       <main id="top">
         <div class="logo-band">
-          <img class="hero-stamp" src={LOGO} alt="Kaia & Tata Publishing — Puzzles and Books Company" />
+          <img class="title-banner" src={TITLE} alt="Kaia & Tata Publishing — Puzzles and Books Company" />
         </div>
         <section class="hero">
           <h1>Puzzles &amp; books that take kids places.</h1>
@@ -114,10 +115,13 @@ export default function App() {
             </form>
           )}
         </section>
+
+        <div class="bottom-stamp">
+          <img src={LOGO} alt="Kaia & Tata Publishing — Puzzles and Books Company stamp" />
+        </div>
       </main>
 
       <footer class="footer">
-        <img src={LOGO} alt="" />
         <span>© {new Date().getFullYear()} Kaia &amp; Tata Publishing — Puzzles and Books Company</span>
       </footer>
     </div>

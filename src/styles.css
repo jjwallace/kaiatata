@@ -87,8 +87,11 @@ body {
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-  /* keep this band white even under browser auto dark-mode */
-  background-color: #fff !important;
+  /* paper texture (matched to the title) extending full width; stays put
+     under browser auto dark-mode */
+  background-color: #f8f3e9 !important;
+  background-image: url('/assets/img/paper_tile.png');
+  background-repeat: repeat;
   color-scheme: light;
   forced-color-adjust: none;
   border-bottom: 1px solid var(--line);
@@ -97,10 +100,22 @@ body {
   align-items: center;
   padding: 40px 24px;
 }
-.hero-stamp {
-  width: min(620px, 90vw);
+.title-banner {
+  width: min(720px, 92vw);
   height: auto;
   /* transparent-background PNG: stays legible on any band color */
+}
+
+/* ---- bottom stamp (small, centered, after signup) ---- */
+.bottom-stamp {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 40px;
+}
+.bottom-stamp img {
+  width: min(180px, 44vw);
+  height: auto;
+  opacity: 0.9;
 }
 
 /* ---- hero ---- */
