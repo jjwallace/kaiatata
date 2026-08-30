@@ -31,6 +31,7 @@ body {
   font-family: 'Fredoka', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .page {
@@ -39,50 +40,56 @@ body {
   padding: 0 24px;
 }
 
-/* ---- nav ---- */
-.nav {
+/* ---- top bar: thin, brown, full-width; slides in once scrolling starts ---- */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  background: rgba(246, 239, 225, 0.9);
-  backdrop-filter: blur(8px);
-  z-index: 10;
-  border-bottom: 1px solid var(--line);
+  gap: 12px;
+  padding: 7px 22px;
+  background: var(--sepia-deep);
+  color: var(--paper);
+  box-shadow: 0 2px 12px rgba(58, 42, 26, 0.28);
+  transform: translateY(-100%);
+  transition: transform 0.28s ease;
 }
-
-.brand {
+.topbar.show {
+  transform: translateY(0);
+}
+.topbar-brand {
+  text-decoration: none;
+  color: var(--paper);
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.topbar-nav {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--sepia-deep);
-  font-weight: 700;
-  font-size: 20px;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-.brand img {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1.5px solid var(--sepia);
-}
-
-.nav-links a {
-  color: var(--sepia);
+.topbar-nav a {
+  color: var(--paper);
   text-decoration: none;
-  margin-left: 22px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  transition: color 0.2s;
+  padding: 4px 12px;
+  border-radius: 999px;
+  opacity: 0.9;
+  transition: opacity 0.15s, background 0.15s;
 }
-.nav-links a:hover {
-  color: var(--ink);
+.topbar-nav a:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.15);
 }
 
-/* ---- logo band (full-bleed white strip across the sand) ---- */
+/* ---- logo band (full-bleed paper strip across the sand) ---- */
 .logo-band {
   width: 100vw;
   margin-left: 50%;
@@ -90,32 +97,62 @@ body {
   /* paper texture (matched to the title) extending full width; stays put
      under browser auto dark-mode */
   background-color: #f8f3e9 !important;
-  background-image: url('/assets/img/paper_tile.png');
+  /* background-image (paper tile) is set inline in App.jsx so Vite resolves
+     it correctly under the GitHub Pages subpath */
   background-repeat: repeat;
   color-scheme: light;
   forced-color-adjust: none;
   border-bottom: 1px solid var(--line);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 24px;
+  gap: 22px;
+  padding: 44px 24px 30px;
+  overflow: hidden;
 }
 .title-banner {
   width: min(720px, 92vw);
   height: auto;
+  /* nudge right so the text reads as centered despite the compass on the
+     right; scales down on narrow screens */
+  transform: translateX(clamp(0px, 3.6vw, 50px));
   /* transparent-background PNG: stays legible on any band color */
 }
 
-/* ---- bottom stamp (small, centered, after signup) ---- */
+/* ---- hero nav pills (stay on screen, under the title) ---- */
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.hero-pills a {
+  text-decoration: none;
+  background: var(--sepia);
+  color: var(--paper);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 9px 22px;
+  border-radius: 999px;
+  box-shadow: 0 3px 0 var(--sepia-deep);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.hero-pills a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 var(--sepia-deep);
+}
+
+/* ---- bottom stamp (large, centered, after signup) ---- */
 .bottom-stamp {
   display: flex;
   justify-content: center;
-  padding: 8px 0 40px;
+  padding: 8px 0 48px;
 }
 .bottom-stamp img {
-  width: min(180px, 44vw);
+  width: min(540px, 82vw);
   height: auto;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* ---- hero ---- */
@@ -315,16 +352,74 @@ body {
 
 /* ---- responsive ---- */
 @media (max-width: 720px) {
+  .page {
+    padding: 0 16px;
+  }
   .showcase {
     grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 44px 0;
+    gap: 22px;
+    padding: 40px 0;
   }
   .showcase.reverse .showcase-art {
     order: 0;
   }
-  .nav-links a {
-    margin-left: 14px;
+  .showcase-art {
+    transform: rotate(0deg);
+    box-shadow: 4px 4px 0 rgba(107, 63, 29, 0.14);
+  }
+  .showcase.reverse .showcase-art {
+    transform: rotate(0deg);
+  }
+
+  /* top bar: keep it compact and readable on small screens */
+  .topbar {
+    padding: 6px 14px;
+    gap: 8px;
+  }
+  .topbar-brand {
+    font-size: 15px;
+  }
+  .topbar-nav {
+    gap: 2px;
+  }
+  .topbar-nav a {
+    padding: 4px 9px;
+    font-size: 13px;
+  }
+
+  .logo-band {
+    padding: 30px 16px 24px;
+    gap: 18px;
+  }
+  .hero {
+    padding: 36px 0 32px;
+  }
+  .hero-pills a {
     font-size: 14px;
+    padding: 8px 18px;
+  }
+  .join {
+    padding: 40px 18px;
+  }
+  .signup input {
+    min-width: 0;
+    width: 100%;
+  }
+  .signup button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar-brand {
+    display: none;
+  }
+  .topbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .topbar-nav a {
+    padding: 4px 6px;
   }
 }
