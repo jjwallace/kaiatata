@@ -22,7 +22,7 @@ const sections = [
     title: 'The Kaia Adventure Series',
     body: 'Follow Kaia as she goes places — through mangrove swamps, past curious alligators and wading herons. Big, bold line art made for little hands and giant imaginations.',
     cta: 'Explore the series',
-    img: asset('assets/img/img_tile_kaia_adventure.png'),
+    img: asset('assets/img/img_tile_kaia_adventure.jpeg'),
     alt: 'Kaia Goes Places — coloring book cover with a young explorer, an alligator and a heron',
   },
   {
@@ -31,7 +31,7 @@ const sections = [
     title: 'Custom Coloring Books',
     body: "Put your child at the center of the story. We craft personalized coloring books — riding elephants, roaming jungles, wherever their adventure leads.",
     cta: 'Start a custom book',
-    img: asset('assets/img/img_tile_custom.png'),
+    img: asset('assets/img/img_tile_custom.jpeg'),
     alt: 'Custom coloring book page of a child riding a decorated elephant',
   },
   {
