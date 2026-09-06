@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "adventure": "Adventure",
+    "custom": "Custom",
+    "puzzles": "Puzzles",
+    "publishing": "Publish"
+  },
+  "hero": {
+    "title": "Puzzles & books that take kids places.",
+    "subtitle": "Kaia & Tata Publishing makes coloring books, custom stories, and playful puzzles for young explorers — and helps new authors get published.",
+    "cta": "Discover our books"
+  },
+  "sections": {
+    "adventure": {
+      "tag": "Coloring book series",
+      "title": "The Kaia Adventure Series",
+      "body": "Follow Kaia as she goes places — through mangrove swamps, past curious alligators and wading herons. Big, bold line art made for little hands and giant imaginations.",
+      "cta": "Explore the series",
+      "alt": "Kaia Goes Places — coloring book cover with a young explorer, an alligator and a heron"
+    },
+    "custom": {
+      "tag": "Made just for them",
+      "title": "Custom Coloring Books",
+      "body": "Put your child at the center of the story. We craft personalized coloring books — riding elephants, roaming jungles, wherever their adventure leads.",
+      "cta": "Start a custom book",
+      "alt": "Custom coloring book page of a child riding a decorated elephant"
+    },
+    "puzzles": {
+      "tag": "Play and learn",
+      "title": "Puzzles for Kids",
+      "body": "Find the differences, trace the path, connect the dots, hunt for words, and colour by number. Screen-free fun that builds focus, patience, and a love of solving.",
+      "cta": "Browse the puzzles",
+      "alt": "Puzzles for kids — find the differences, trace the path, connect the dots, word search and colour by number"
+    },
+    "publishing": {
+      "tag": "For authors & creators",
+      "title": "Publishing Opportunities",
+      "body": "Have a story or activity book in you? Bring it to our press. We help authors and illustrators turn manuscripts into published books for kids everywhere.",
+      "cta": "Publish with us",
+      "alt": "Publishing opportunities — a vintage printing press by a river"
+    }
+  },
+  "join": {
+    "title": "Join the adventure",
+    "body": "New books, puzzles, and publishing news — straight to your inbox.",
+    "placeholder": "you@example.com",
+    "button": "Keep me posted",
+    "thanks": "Thanks — welcome aboard, explorer! 🧭"
+  },
+  "footer": "Kaia & Tata Publishing — Puzzles and Books Company"
+}

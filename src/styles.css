@@ -68,6 +68,12 @@ body {
   font-size: 16px;
   white-space: nowrap;
 }
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
 .topbar-nav {
   display: flex;
   gap: 4px;
@@ -89,8 +95,93 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
+/* ---- language switcher (flag menu; used in hero + topbar) ---- */
+.lang {
+  position: relative;
+}
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 2px solid var(--sepia);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 0 var(--sepia-deep);
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.lang-btn:hover {
+  transform: translateY(-1px);
+}
+.lang-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+.lang-code {
+  letter-spacing: 0.5px;
+}
+.lang-caret {
+  font-size: 11px;
+  opacity: 0.7;
+}
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 60;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  min-width: 172px;
+  background: var(--paper);
+  border: 2px solid var(--sepia);
+  border-radius: 14px;
+  box-shadow: 4px 6px 0 rgba(107, 63, 29, 0.18);
+}
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+.lang-item:hover {
+  background: rgba(122, 74, 34, 0.1);
+}
+.lang-item.active {
+  background: var(--sepia);
+  color: var(--paper);
+}
+/* dark variant used inside the brown topbar */
+.lang.on-dark .lang-btn {
+  background: transparent;
+  border-color: rgba(246, 239, 225, 0.55);
+  color: var(--paper);
+  box-shadow: none;
+  padding: 4px 9px;
+  font-size: 13px;
+}
+.lang.on-dark .lang-flag {
+  font-size: 16px;
+}
+
 /* ---- logo band (full-bleed paper strip across the sand) ---- */
 .logo-band {
+  position: relative;
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
@@ -110,6 +201,12 @@ body {
   gap: 22px;
   padding: 44px 24px 30px;
   overflow: hidden;
+}
+.band-lang {
+  position: absolute;
+  top: 16px;
+  right: clamp(12px, 3vw, 28px);
+  z-index: 6;
 }
 .title-banner {
   width: min(720px, 92vw);
@@ -414,12 +511,24 @@ body {
   .topbar-brand {
     display: none;
   }
-  .topbar-nav {
+  .topbar-right {
     width: 100%;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .topbar-nav {
+    flex: 1;
     justify-content: space-between;
     gap: 0;
   }
   .topbar-nav a {
     padding: 4px 6px;
+  }
+  /* keep just the flag in the topbar on tiny screens to save room */
+  .lang.on-dark .lang-code {
+    display: none;
+  }
+  .lang.on-dark .lang-btn {
+    padding: 4px 7px;
   }
 }

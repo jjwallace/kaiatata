@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "adventure": "Avventura",
+    "custom": "Su misura",
+    "puzzles": "Giochi",
+    "publishing": "Pubblica"
+  },
+  "hero": {
+    "title": "Giochi e libri che portano i bambini lontano.",
+    "subtitle": "Kaia & Tata Publishing crea libri da colorare, storie personalizzate e giochi divertenti per piccoli esploratori — e aiuta i nuovi autori a pubblicare.",
+    "cta": "Scopri i nostri libri"
+  },
+  "sections": {
+    "adventure": {
+      "tag": "Serie di libri da colorare",
+      "title": "La serie delle avventure di Kaia",
+      "body": "Segui Kaia mentre gira il mondo — tra le mangrovie, accanto a coccodrilli curiosi e aironi che sguazzano. Grandi disegni dal tratto deciso, pensati per le manine e per le immaginazioni sconfinate.",
+      "cta": "Esplora la serie",
+      "alt": "Kaia gira il mondo — copertina del libro da colorare con una giovane esploratrice, un coccodrillo e un airone"
+    },
+    "custom": {
+      "tag": "Fatto apposta per loro",
+      "title": "Libri da colorare su misura",
+      "body": "Metti tuo figlio al centro della storia. Creiamo libri da colorare personalizzati — a dorso di elefante, tra le giungle, ovunque conduca l'avventura.",
+      "cta": "Crea un libro su misura",
+      "alt": "Pagina di un libro da colorare personalizzato con un bambino su un elefante decorato"
+    },
+    "puzzles": {
+      "tag": "Giocare e imparare",
+      "title": "Giochi per bambini",
+      "body": "Trova le differenze, segui il percorso, unisci i puntini, cerca le parole e colora seguendo i numeri. Divertimento senza schermi che sviluppa concentrazione, pazienza e la voglia di risolvere.",
+      "cta": "Sfoglia i giochi",
+      "alt": "Giochi per bambini — trova le differenze, segui il percorso, unisci i puntini, crucipuzzle e colora seguendo i numeri"
+    },
+    "publishing": {
+      "tag": "Per autori e creativi",
+      "title": "Opportunità di pubblicazione",
+      "body": "Hai una storia o un libro di attività dentro di te? Portalo alla nostra casa editrice. Aiutiamo autori e illustratori a trasformare i manoscritti in libri pubblicati per bambini in tutto il mondo.",
+      "cta": "Pubblica con noi",
+      "alt": "Opportunità di pubblicazione — un'antica macchina da stampa in riva a un fiume"
+    }
+  },
+  "join": {
+    "title": "Unisciti all'avventura",
+    "body": "Nuovi libri, giochi e novità editoriali — direttamente nella tua casella di posta.",
+    "placeholder": "tu@esempio.it",
+    "button": "Tienimi aggiornato",
+    "thanks": "Grazie — benvenuto a bordo, esploratore! 🧭"
+  },
+  "footer": "Kaia & Tata Publishing — giochi e libri per bambini"
+}

@@ -1,4 +1,5 @@
-import { createSignal, onMount, onCleanup, For } from 'solid-js';
+import { createSignal, onMount, onCleanup, For, Show } from 'solid-js';
+import { dict, DEFAULT_LANG } from './i18n';
 
 // prefix with Vite's base URL so assets resolve under the /kaiatata/ subpath
 const asset = (p) => `${import.meta.env.BASE_URL}${p}`;
@@ -7,59 +8,119 @@ const LOGO = asset('assets/img/image_kaia_logo_stamp.png');
 const TITLE = asset('assets/img/img_kaia_top_title_t.webp');
 const PAPER = asset('assets/img/paper_tile.webp');
 
+// href + the key used to look up the label in the active locale (see src/locales)
 const navLinks = [
-  { href: '#adventure', label: 'Adventure' },
-  { href: '#custom', label: 'Custom' },
-  { href: '#puzzles', label: 'Puzzles' },
-  { href: '#publishing', label: 'Publish' },
+  { href: '#adventure', key: 'adventure' },
+  { href: '#custom', key: 'custom' },
+  { href: '#puzzles', key: 'puzzles' },
+  { href: '#publishing', key: 'publishing' },
 ];
 
+// English is the default. Each code must have a matching src/locales/<code>.json
+// registered in src/i18n.js.
+const LANGS = [
+  { code: 'en', flag: '🇬🇧', label: 'English' },
+  { code: 'pl', flag: '🇵🇱', label: 'Polski' },
+  { code: 'de', flag: '🇩🇪', label: 'Deutsch' },
+  { code: 'fr', flag: '🇫🇷', label: 'Français' },
+  { code: 'es', flag: '🇪🇸', label: 'Español' },
+  { code: 'it', flag: '🇮🇹', label: 'Italiano' },
+];
+
+// Flag language switcher. Rendered twice (hero + topbar); each instance keeps
+// its own open state but shares the `lang` signal passed in via props.
+function LangMenu(props) {
+  const [open, setOpen] = createSignal(false);
+  const current = () => LANGS.find((l) => l.code === props.lang()) ?? LANGS[0];
+  let root;
+
+  onMount(() => {
+    const onDoc = (e) => {
+      if (root && !root.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener('click', onDoc);
+    onCleanup(() => document.removeEventListener('click', onDoc));
+  });
+
+  return (
+    <div class={`lang ${props.variant ?? ''}`} ref={root}>
+      <button
+        class="lang-btn"
+        type="button"
+        aria-label="Select language"
+        aria-expanded={open()}
+        onClick={(e) => {
+          e.stopPropagation();
+          setOpen(!open());
+        }}
+      >
+        <span class="lang-flag">{current().flag}</span>
+        <span class="lang-code">{current().code.toUpperCase()}</span>
+        <span class="lang-caret" aria-hidden="true">▾</span>
+      </button>
+      <Show when={open()}>
+        <ul class="lang-menu">
+          <For each={LANGS}>
+            {(l) => (
+              <li>
+                <button
+                  type="button"
+                  class={`lang-item ${l.code === props.lang() ? 'active' : ''}`}
+                  onClick={() => {
+                    props.setLang(l.code);
+                    setOpen(false);
+                  }}
+                >
+                  <span class="lang-flag">{l.flag}</span>
+                  <span>{l.label}</span>
+                </button>
+              </li>
+            )}
+          </For>
+        </ul>
+      </Show>
+    </div>
+  );
+}
+
+// Section order + images; all copy lives in src/locales, keyed by id.
 // Ordered as requested: adventure → custom → puzzles → publishing
 const sections = [
-  {
-    id: 'adventure',
-    tag: 'Coloring book series',
-    title: 'The Kaia Adventure Series',
-    body: 'Follow Kaia as she goes places — through mangrove swamps, past curious alligators and wading herons. Big, bold line art made for little hands and giant imaginations.',
-    cta: 'Explore the series',
-    img: asset('assets/img/img_tile_kaia_adventure.webp'),
-    alt: 'Kaia Goes Places — coloring book cover with a young explorer, an alligator and a heron',
-  },
-  {
-    id: 'custom',
-    tag: 'Made just for them',
-    title: 'Custom Coloring Books',
-    body: "Put your child at the center of the story. We craft personalized coloring books — riding elephants, roaming jungles, wherever their adventure leads.",
-    cta: 'Start a custom book',
-    img: asset('assets/img/img_tile_custom.webp'),
-    alt: 'Custom coloring book page of a child riding a decorated elephant',
-  },
-  {
-    id: 'puzzles',
-    tag: 'Play and learn',
-    title: 'Puzzles for Kids',
-    body: 'Find the differences, trace the path, connect the dots, hunt for words, and colour by number. Screen-free fun that builds focus, patience, and a love of solving.',
-    cta: 'Browse the puzzles',
-    img: asset('assets/img/img_puzzles_new.webp'),
-    alt: 'Puzzles for kids — find the differences, trace the path, connect the dots, word search and colour by number',
-  },
-  {
-    id: 'publishing',
-    tag: 'For authors & creators',
-    title: 'Publishing Opportunities',
-    body: 'Have a story or activity book in you? Bring it to our press. We help authors and illustrators turn manuscripts into published books for kids everywhere.',
-    cta: 'Publish with us',
-    img: asset('assets/img/publishing.webp'),
-    alt: 'Publishing opportunities — a vintage printing press by a river',
-  },
+  { id: 'adventure', img: asset('assets/img/img_tile_kaia_adventure.webp') },
+  { id: 'custom', img: asset('assets/img/img_tile_custom.webp') },
+  { id: 'puzzles', img: asset('assets/img/img_puzzles_new.webp') },
+  { id: 'publishing', img: asset('assets/img/publishing.webp') },
 ];
 
 export default function App() {
   const [submitted, setSubmitted] = createSignal(false);
   const [email, setEmail] = createSignal('');
   const [scrolled, setScrolled] = createSignal(false);
+  const [lang, setLangState] = createSignal(DEFAULT_LANG);
+
+  // active locale dictionary — reactive: reads the lang() signal
+  const tr = () => dict(lang());
+
+  // persist the chosen language so it sticks across visits
+  const setLang = (code) => {
+    setLangState(code);
+    try {
+      localStorage.setItem('kt-lang', code);
+      document.documentElement.lang = code;
+    } catch (_) {}
+  };
 
   onMount(() => {
+    try {
+      // precedence: ?lang= URL param, then saved preference, then default
+      const known = (c) => c && LANGS.some((l) => l.code === c);
+      const fromUrl = new URLSearchParams(window.location.search).get('lang');
+      const saved = localStorage.getItem('kt-lang');
+      if (known(fromUrl)) setLang(fromUrl);
+      else if (known(saved)) setLangState(saved);
+      document.documentElement.lang = lang();
+    } catch (_) {}
+
     const onScroll = () => setScrolled(window.scrollY > 8);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -78,63 +139,68 @@ export default function App() {
         <a class="topbar-brand" href="#top">
           <span>Kaia &amp; Tata</span>
         </a>
-        <nav class="topbar-nav">
-          <For each={navLinks}>
-            {(l) => <a href={l.href}>{l.label}</a>}
-          </For>
-        </nav>
+        <div class="topbar-right">
+          <nav class="topbar-nav">
+            <For each={navLinks}>
+              {(l) => <a href={l.href}>{tr().nav[l.key]}</a>}
+            </For>
+          </nav>
+          <LangMenu variant="on-dark" lang={lang} setLang={setLang} />
+        </div>
       </header>
 
       <main id="top">
         <div class="logo-band" style={`background-image: url(${PAPER})`}>
+          <div class="band-lang">
+            <LangMenu lang={lang} setLang={setLang} />
+          </div>
           <img class="title-banner" src={TITLE} alt="Kaia & Tata Publishing — Puzzles and Books Company" />
           <nav class="hero-pills">
             <For each={navLinks}>
-              {(l) => <a href={l.href}>{l.label}</a>}
+              {(l) => <a href={l.href}>{tr().nav[l.key]}</a>}
             </For>
           </nav>
         </div>
         <section class="hero">
-          <h1>Puzzles &amp; books that take kids places.</h1>
-          <p class="subtitle">
-            Kaia &amp; Tata Publishing makes coloring books, custom stories, and
-            playful puzzles for young explorers — and helps new authors get
-            published.
-          </p>
-          <a class="cta" href="#adventure">Discover our books</a>
+          <h1>{tr().hero.title}</h1>
+          <p class="subtitle">{tr().hero.subtitle}</p>
+          <a class="cta" href="#adventure">{tr().hero.cta}</a>
         </section>
 
-        {sections.map((s, i) => (
-          <section id={s.id} class={`showcase ${i % 2 ? 'reverse' : ''}`}>
-            <div class="showcase-art">
-              <img src={s.img} alt={s.alt} loading="lazy" />
-            </div>
-            <div class="showcase-copy">
-              <p class="eyebrow">{s.tag}</p>
-              <h2>{s.title}</h2>
-              <p>{s.body}</p>
-              <a class="link-cta" href="#join">
-                {s.cta} <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </section>
-        ))}
+        {sections.map((s, i) => {
+          const c = () => tr().sections[s.id];
+          return (
+            <section id={s.id} class={`showcase ${i % 2 ? 'reverse' : ''}`}>
+              <div class="showcase-art">
+                <img src={s.img} alt={c().alt} loading="lazy" />
+              </div>
+              <div class="showcase-copy">
+                <p class="eyebrow">{c().tag}</p>
+                <h2>{c().title}</h2>
+                <p>{c().body}</p>
+                <a class="link-cta" href="#join">
+                  {c().cta} <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </section>
+          );
+        })}
 
         <section id="join" class="join">
-          <h2>Join the adventure</h2>
-          <p>New books, puzzles, and publishing news — straight to your inbox.</p>
+          <h2>{tr().join.title}</h2>
+          <p>{tr().join.body}</p>
           {submitted() ? (
-            <p class="thanks">Thanks — welcome aboard, explorer! 🧭</p>
+            <p class="thanks">{tr().join.thanks}</p>
           ) : (
             <form class="signup" onSubmit={handleSubmit}>
               <input
                 type="email"
                 required
-                placeholder="you@example.com"
+                placeholder={tr().join.placeholder}
                 value={email()}
                 onInput={(e) => setEmail(e.currentTarget.value)}
               />
-              <button type="submit">Keep me posted</button>
+              <button type="submit">{tr().join.button}</button>
             </form>
           )}
         </section>
@@ -145,7 +211,7 @@ export default function App() {
       </main>
 
       <footer class="footer">
-        <span>© {new Date().getFullYear()} Kaia &amp; Tata Publishing — Puzzles and Books Company</span>
+        <span>© {new Date().getFullYear()} {tr().footer}</span>
       </footer>
     </div>
   );

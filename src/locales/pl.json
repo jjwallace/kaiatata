@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "adventure": "Przygoda",
+    "custom": "Na zamówienie",
+    "puzzles": "Zagadki",
+    "publishing": "Wydaj"
+  },
+  "hero": {
+    "title": "Zagadki i książki, które zabierają dzieci w podróż.",
+    "subtitle": "Kaia & Tata Publishing tworzy kolorowanki, spersonalizowane historie i pełne zabawy zagadki dla małych odkrywców — i pomaga nowym autorom wydać ich książki.",
+    "cta": "Poznaj nasze książki"
+  },
+  "sections": {
+    "adventure": {
+      "tag": "Seria kolorowanek",
+      "title": "Seria Przygód Kai",
+      "body": "Śledź Kaię, gdy rusza w świat — przez namorzynowe bagna, obok ciekawskich aligatorów i brodzących czapli. Duże, wyraziste rysunki stworzone dla małych rąk i wielkiej wyobraźni.",
+      "cta": "Odkryj serię",
+      "alt": "Kaia rusza w świat — okładka kolorowanki z małą odkrywczynią, aligatorem i czaplą"
+    },
+    "custom": {
+      "tag": "Zrobione specjalnie dla nich",
+      "title": "Kolorowanki na zamówienie",
+      "body": "Umieść swoje dziecko w centrum opowieści. Tworzymy spersonalizowane kolorowanki — jazda na słoniach, wędrówki po dżungli, dokądkolwiek poprowadzi je przygoda.",
+      "cta": "Zamów własną książkę",
+      "alt": "Strona kolorowanki na zamówienie z dzieckiem jadącym na ozdobionym słoniu"
+    },
+    "puzzles": {
+      "tag": "Zabawa i nauka",
+      "title": "Zagadki dla dzieci",
+      "body": "Znajdź różnice, poprowadź ścieżkę, połącz kropki, szukaj słów i koloruj według numerów. Zabawa bez ekranu, która rozwija skupienie, cierpliwość i miłość do rozwiązywania zagadek.",
+      "cta": "Przeglądaj zagadki",
+      "alt": "Zagadki dla dzieci — znajdź różnice, poprowadź ścieżkę, połącz kropki, wykreślanka i kolorowanie według numerów"
+    },
+    "publishing": {
+      "tag": "Dla autorów i twórców",
+      "title": "Możliwości wydawnicze",
+      "body": "Masz w sobie historię lub książkę z aktywnościami? Przynieś ją do naszego wydawnictwa. Pomagamy autorom i ilustratorom zamienić rękopisy w wydane książki dla dzieci na całym świecie.",
+      "cta": "Wydaj z nami",
+      "alt": "Możliwości wydawnicze — zabytkowa prasa drukarska nad rzeką"
+    }
+  },
+  "join": {
+    "title": "Dołącz do przygody",
+    "body": "Nowe książki, zagadki i wieści wydawnicze — prosto do Twojej skrzynki.",
+    "placeholder": "ty@przyklad.pl",
+    "button": "Informujcie mnie",
+    "thanks": "Dziękujemy — witaj na pokładzie, odkrywco! 🧭"
+  },
+  "footer": "Kaia & Tata Publishing — zagadki i książki dla dzieci"
+}

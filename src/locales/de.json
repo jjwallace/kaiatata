@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "adventure": "Abenteuer",
+    "custom": "Individuell",
+    "puzzles": "Rätsel",
+    "publishing": "Verlag"
+  },
+  "hero": {
+    "title": "Rätsel und Bücher, die Kinder auf Reisen schicken.",
+    "subtitle": "Kaia & Tata Publishing macht Malbücher, persönliche Geschichten und verspielte Rätsel für kleine Entdecker — und hilft neuen Autoren bei der Veröffentlichung.",
+    "cta": "Entdecke unsere Bücher"
+  },
+  "sections": {
+    "adventure": {
+      "tag": "Malbuch-Reihe",
+      "title": "Die Kaia-Abenteuer-Reihe",
+      "body": "Begleite Kaia auf ihren Reisen — durch Mangrovensümpfe, vorbei an neugierigen Alligatoren und watenden Reihern. Große, kräftige Strichzeichnungen für kleine Hände und riesige Fantasie.",
+      "cta": "Die Reihe entdecken",
+      "alt": "Kaia geht auf Reisen — Malbuch-Cover mit einer jungen Entdeckerin, einem Alligator und einem Reiher"
+    },
+    "custom": {
+      "tag": "Nur für sie gemacht",
+      "title": "Individuelle Malbücher",
+      "body": "Stell dein Kind in den Mittelpunkt der Geschichte. Wir gestalten persönliche Malbücher — auf Elefanten reitend, durch den Dschungel streifend, wohin das Abenteuer auch führt.",
+      "cta": "Eigenes Buch gestalten",
+      "alt": "Seite eines individuellen Malbuchs mit einem Kind auf einem geschmückten Elefanten"
+    },
+    "puzzles": {
+      "tag": "Spielen und lernen",
+      "title": "Rätsel für Kinder",
+      "body": "Finde die Unterschiede, folge dem Weg, verbinde die Punkte, suche Wörter und male nach Zahlen. Bildschirmfreier Spaß, der Konzentration, Geduld und Freude am Lösen fördert.",
+      "cta": "Rätsel ansehen",
+      "alt": "Rätsel für Kinder — Finde die Unterschiede, folge dem Weg, verbinde die Punkte, Wortsuche und Malen nach Zahlen"
+    },
+    "publishing": {
+      "tag": "Für Autoren und Kreative",
+      "title": "Veröffentlichungsmöglichkeiten",
+      "body": "Steckt eine Geschichte oder ein Aktivitätsbuch in dir? Bring es zu unserem Verlag. Wir helfen Autoren und Illustratoren, Manuskripte in veröffentlichte Kinderbücher zu verwandeln — für Kinder überall.",
+      "cta": "Mit uns veröffentlichen",
+      "alt": "Veröffentlichungsmöglichkeiten — eine alte Druckerpresse an einem Fluss"
+    }
+  },
+  "join": {
+    "title": "Sei beim Abenteuer dabei",
+    "body": "Neue Bücher, Rätsel und Verlagsnews — direkt in dein Postfach.",
+    "placeholder": "du@beispiel.de",
+    "button": "Halte mich auf dem Laufenden",
+    "thanks": "Danke — willkommen an Bord, Entdecker! 🧭"
+  },
+  "footer": "Kaia & Tata Publishing — Rätsel und Bücher für Kinder"
+}

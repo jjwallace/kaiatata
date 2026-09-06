@@ -1,0 +1,51 @@
+{
+  "nav": {
+    "adventure": "Aventure",
+    "custom": "Sur mesure",
+    "puzzles": "Jeux",
+    "publishing": "Publier"
+  },
+  "hero": {
+    "title": "Des jeux et des livres qui emmènent les enfants loin.",
+    "subtitle": "Kaia & Tata Publishing crée des livres de coloriage, des histoires personnalisées et des jeux ludiques pour les petits explorateurs — et aide les nouveaux auteurs à être publiés.",
+    "cta": "Découvrir nos livres"
+  },
+  "sections": {
+    "adventure": {
+      "tag": "Série de coloriages",
+      "title": "La série des aventures de Kaia",
+      "body": "Suivez Kaia au fil de ses voyages — à travers les mangroves, près des alligators curieux et des hérons qui pataugent. De grands dessins au trait bien nets, pensés pour les petites mains et les grandes imaginations.",
+      "cta": "Explorer la série",
+      "alt": "Kaia part à l'aventure — couverture de coloriage avec une jeune exploratrice, un alligator et un héron"
+    },
+    "custom": {
+      "tag": "Rien que pour eux",
+      "title": "Coloriages personnalisés",
+      "body": "Placez votre enfant au cœur de l'histoire. Nous créons des livres de coloriage personnalisés — à dos d'éléphant, au fil de la jungle, où que mène l'aventure.",
+      "cta": "Créer un livre sur mesure",
+      "alt": "Page de coloriage personnalisé d'un enfant montant un éléphant décoré"
+    },
+    "puzzles": {
+      "tag": "Jouer et apprendre",
+      "title": "Jeux pour enfants",
+      "body": "Trouvez les différences, suivez le chemin, reliez les points, cherchez les mots et coloriez par numéro. Un plaisir sans écran qui développe la concentration, la patience et le goût de résoudre.",
+      "cta": "Voir les jeux",
+      "alt": "Jeux pour enfants — trouver les différences, suivre le chemin, relier les points, mots mêlés et coloriage par numéros"
+    },
+    "publishing": {
+      "tag": "Pour les auteurs et créateurs",
+      "title": "Opportunités d'édition",
+      "body": "Vous avez une histoire ou un cahier d'activités en vous ? Confiez-le à notre maison. Nous aidons auteurs et illustrateurs à transformer leurs manuscrits en livres publiés pour les enfants du monde entier.",
+      "cta": "Publier avec nous",
+      "alt": "Opportunités d'édition — une presse d'imprimerie ancienne au bord d'une rivière"
+    }
+  },
+  "join": {
+    "title": "Rejoignez l'aventure",
+    "body": "Nouveaux livres, jeux et actualités d'édition — directement dans votre boîte mail.",
+    "placeholder": "vous@exemple.fr",
+    "button": "Tenez-moi au courant",
+    "thanks": "Merci — bienvenue à bord, explorateur ! 🧭"
+  },
+  "footer": "Kaia & Tata Publishing — jeux et livres pour enfants"
+}
