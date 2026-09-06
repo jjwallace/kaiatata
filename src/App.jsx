@@ -4,8 +4,8 @@ import { createSignal, onMount, onCleanup, For } from 'solid-js';
 const asset = (p) => `${import.meta.env.BASE_URL}${p}`;
 
 const LOGO = asset('assets/img/image_kaia_logo_stamp.png');
-const TITLE = asset('assets/img/img_kaia_top_title_t.png');
-const PAPER = asset('assets/img/paper_tile.png');
+const TITLE = asset('assets/img/img_kaia_top_title_t.webp');
+const PAPER = asset('assets/img/paper_tile.webp');
 
 const navLinks = [
   { href: '#adventure', label: 'Adventure' },
@@ -22,7 +22,7 @@ const sections = [
     title: 'The Kaia Adventure Series',
     body: 'Follow Kaia as she goes places — through mangrove swamps, past curious alligators and wading herons. Big, bold line art made for little hands and giant imaginations.',
     cta: 'Explore the series',
-    img: asset('assets/img/img_tile_kaia_adventure.jpeg'),
+    img: asset('assets/img/img_tile_kaia_adventure.webp'),
     alt: 'Kaia Goes Places — coloring book cover with a young explorer, an alligator and a heron',
   },
   {
@@ -31,7 +31,7 @@ const sections = [
     title: 'Custom Coloring Books',
     body: "Put your child at the center of the story. We craft personalized coloring books — riding elephants, roaming jungles, wherever their adventure leads.",
     cta: 'Start a custom book',
-    img: asset('assets/img/img_tile_custom.jpeg'),
+    img: asset('assets/img/img_tile_custom.webp'),
     alt: 'Custom coloring book page of a child riding a decorated elephant',
   },
   {
@@ -40,7 +40,7 @@ const sections = [
     title: 'Puzzles for Kids',
     body: 'Find the differences, trace the path, connect the dots, hunt for words, and colour by number. Screen-free fun that builds focus, patience, and a love of solving.',
     cta: 'Browse the puzzles',
-    img: asset('assets/img/img_puzzles_new.jpeg'),
+    img: asset('assets/img/img_puzzles_new.webp'),
     alt: 'Puzzles for kids — find the differences, trace the path, connect the dots, word search and colour by number',
   },
   {
@@ -49,7 +49,7 @@ const sections = [
     title: 'Publishing Opportunities',
     body: 'Have a story or activity book in you? Bring it to our press. We help authors and illustrators turn manuscripts into published books for kids everywhere.',
     cta: 'Publish with us',
-    img: asset('assets/img/17e054c5-e48c-41ed-8452-91ad3ccdf056.jpeg'),
+    img: asset('assets/img/publishing.webp'),
     alt: 'Publishing opportunities — a vintage printing press by a river',
   },
 ];
