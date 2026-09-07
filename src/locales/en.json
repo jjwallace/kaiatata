@@ -51,42 +51,26 @@
   "about": {
     "eyebrow": "About us",
     "title": "Our Purpose",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "intro": "Some families live under one roof. Others live under one sky.",
     "mission": {
-      "title": "Our Mission",
-      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
-    },
-    "story": {
-      "title": "Our Story",
+      "dedication": "Dedicated to fathers left behind, and families reunited across borders",
+      "title": "Why we exist",
       "body": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+        "For some fathers, the border falls right through the middle of the family: the money he doesn't have, the time he can't take, the duties that hold him in place while his kids grow up an ocean away. This is for the fathers still waiting, and the families who make it back. We can't undo the distance — only keep a hand held across it, one page at a time.",
+        "We were founded for those distances: for families separated by migration, and for the parents waiting on the far side of a border. Every book we publish is a small act of reunion — a story two people can share when they can't yet share a room. It goes where they can't: into an envelope, onto a screen, colored in two places at once.",
+        "Reuniting a family across borders is slow, and costly, and rarely fair. It is the cause we were built on, and the one we are still reaching toward — one page, one story, one homecoming at a time."
       ]
     },
-    "valuesTitle": "What we believe",
-    "values": [
-      {
-        "title": "Lorem ipsum",
-        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-      },
-      {
-        "title": "Dolor sit",
-        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
-      },
-      {
-        "title": "Amet consectetur",
-        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
-      }
-    ],
-    "makers": {
-      "title": "Meet the makers",
-      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    "giving": {
+      "title": "Where it goes",
+      "body": "This was never only about books. As we grow, part of what we make goes toward the families furthest from reunion — the ones facing legal costs and closed doors with no way to pay for either. Every purchase is a small vote for a family getting to be together again."
     },
     "cta": {
       "title": "Join the adventure",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "body": "New books, puzzles, and the occasional bit of good news — sent only when there's something worth sharing.",
       "button": "Sign up"
-    }
+    },
+    "benediction": "Wherever you're reading this from, and whoever you're missing: the story isn't over. It's just being told across a longer distance for a while."
   },
   "footer": "Kaia & Tata Publishing — Puzzles and Books Company"
 }

@@ -51,10 +51,15 @@
   "about": {
     "eyebrow": "Sobre nosotros",
     "title": "Nuestro propósito",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "intro": "Algunas familias viven bajo un mismo techo. Otras, bajo un mismo cielo.",
     "mission": {
-      "title": "Nuestra misión",
-      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+      "dedication": "Dedicado a los padres que quedaron atrás, y a las familias que vuelven a reunirse a través de las fronteras",
+      "title": "Por qué existimos",
+      "body": [
+        "Para algunos padres, la frontera pasa justo por el medio de la familia: el dinero que no tiene, el tiempo que no puede tomarse, las obligaciones que lo mantienen en su lugar mientras sus hijos crecen a un océano de distancia. Esto es para los padres que siguen esperando, y para las familias que logran volver a encontrarse. No podemos deshacer la distancia — solo sostener una mano a través de ella, página a página.",
+        "Nacimos para esas distancias: para las familias separadas por la migración, y para los padres que esperan al otro lado de una frontera. Cada libro que publicamos es un pequeño acto de reencuentro — una historia que dos personas pueden compartir cuando aún no pueden compartir una habitación. Llega adonde ellos no pueden: dentro de un sobre, en una pantalla, coloreado en dos lugares a la vez.",
+        "Reunir a una familia a través de las fronteras es lento, costoso y pocas veces justo. Es la causa que nos dio origen, y la que todavía perseguimos — página a página, historia a historia, un regreso a casa tras otro."
+      ]
     },
     "story": {
       "title": "Nuestra historia",

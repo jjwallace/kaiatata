@@ -51,10 +51,15 @@
   "about": {
     "eyebrow": "O nas",
     "title": "Nasz cel",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "intro": "Niektóre rodziny żyją pod jednym dachem. Inne — pod jednym niebem.",
     "mission": {
-      "title": "Nasza misja",
-      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+      "dedication": "Poświęcone ojcom, którzy zostali, i rodzinom, które łączą się na nowo ponad granicami",
+      "title": "Dlaczego istniejemy",
+      "body": [
+        "Dla niektórych ojców granica przebiega przez sam środek rodziny: pieniądze, których nie ma, czas, którego nie może sobie pozwolić, obowiązki, które trzymają go w miejscu, podczas gdy jego dzieci dorastają o ocean stąd. To jest dla ojców, którzy wciąż czekają, i dla rodzin, które odnajdują drogę powrotną. Nie możemy cofnąć odległości — możemy tylko utrzymać dłoń wyciągniętą ponad nią, strona po stronie.",
+        "Powstaliśmy dla tych odległości: dla rodzin rozdzielonych przez migrację i dla rodziców czekających po drugiej stronie granicy. Każda książka, którą wydajemy, to mały akt ponownego spotkania — historia, którą dwoje ludzi może dzielić, gdy nie mogą jeszcze dzielić jednego pokoju. Trafia tam, gdzie oni nie mogą: do koperty, na ekran, kolorowana w dwóch miejscach naraz.",
+        "Łączenie rodziny ponad granicami bywa powolne, kosztowne i rzadko sprawiedliwe. To cel, dla którego powstaliśmy, i ten, do którego wciąż dążymy — strona po stronie, historia po historii, powrót po powrocie."
+      ]
     },
     "story": {
       "title": "Nasza historia",

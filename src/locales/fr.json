@@ -51,10 +51,15 @@
   "about": {
     "eyebrow": "À propos",
     "title": "Notre raison d'être",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "intro": "Certaines familles vivent sous un même toit. D'autres, sous un même ciel.",
     "mission": {
-      "title": "Notre mission",
-      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+      "dedication": "Dédié aux pères restés de l'autre côté, et aux familles réunies par-delà les frontières",
+      "title": "Pourquoi nous existons",
+      "body": [
+        "Pour certains pères, la frontière passe en plein milieu de la famille : l'argent qu'il n'a pas, le temps qu'il ne peut pas prendre, les obligations qui le retiennent tandis que ses enfants grandissent à un océan de distance. Ceci est pour les pères qui attendent encore, et pour les familles qui parviennent à se retrouver. Nous ne pouvons pas effacer la distance — seulement tenir une main par-delà elle, page après page.",
+        "C'est pour ces distances que nous sommes nés : pour les familles séparées par la migration, et pour les parents qui attendent de l'autre côté d'une frontière. Chaque livre que nous publions est un petit acte de retrouvailles — une histoire que deux personnes peuvent partager quand elles ne peuvent pas encore partager une pièce. Il va là où elles ne peuvent pas : dans une enveloppe, sur un écran, colorié en deux endroits à la fois.",
+        "Réunir une famille par-delà les frontières est lent, coûteux et rarement juste. C'est la cause qui nous a fait naître, et celle vers laquelle nous avançons encore — page après page, histoire après histoire, un retour après l'autre."
+      ]
     },
     "story": {
       "title": "Notre histoire",

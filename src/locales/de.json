@@ -51,10 +51,15 @@
   "about": {
     "eyebrow": "Über uns",
     "title": "Unser Zweck",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "intro": "Manche Familien leben unter einem Dach. Andere unter einem Himmel.",
     "mission": {
-      "title": "Unsere Mission",
-      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+      "dedication": "Den zurückgelassenen Vätern gewidmet, und den über Grenzen hinweg wiedervereinten Familien",
+      "title": "Warum es uns gibt",
+      "body": [
+        "Für manche Väter verläuft die Grenze mitten durch die Familie: das Geld, das er nicht hat, die Zeit, die er sich nicht nehmen kann, die Pflichten, die ihn festhalten, während seine Kinder einen Ozean entfernt aufwachsen. Das hier ist für die Väter, die noch warten, und für die Familien, die den Weg zurückfinden. Wir können die Entfernung nicht aufheben — nur eine Hand über sie hinweg festhalten, Seite für Seite.",
+        "Für diese Entfernungen wurden wir gegründet: für Familien, die durch Migration getrennt sind, und für die Eltern, die auf der anderen Seite einer Grenze warten. Jedes Buch, das wir veröffentlichen, ist ein kleiner Akt des Wiedersehens — eine Geschichte, die zwei Menschen teilen können, wenn sie noch kein Zimmer teilen können. Es geht dorthin, wohin sie nicht können: in einen Umschlag, auf einen Bildschirm, an zwei Orten zugleich ausgemalt.",
+        "Eine Familie über Grenzen hinweg wieder zusammenzuführen ist langsam, teuer und selten gerecht. Es ist der Grund, aus dem wir entstanden sind, und das Ziel, dem wir noch entgegengehen — Seite für Seite, Geschichte für Geschichte, eine Heimkehr nach der anderen."
+      ]
     },
     "story": {
       "title": "Unsere Geschichte",
