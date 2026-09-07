@@ -3,7 +3,8 @@
     "adventure": "Adventure",
     "custom": "Custom",
     "puzzles": "Puzzles",
-    "publishing": "Publish"
+    "publishing": "Publish",
+    "about": "About"
   },
   "hero": {
     "title": "Puzzles & books that take kids places.",
@@ -46,6 +47,46 @@
     "placeholder": "you@example.com",
     "button": "Keep me posted",
     "thanks": "Thanks — welcome aboard, explorer! 🧭"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Our Purpose",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "mission": {
+      "title": "Our Mission",
+      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+    },
+    "story": {
+      "title": "Our Story",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+      ]
+    },
+    "valuesTitle": "What we believe",
+    "values": [
+      {
+        "title": "Lorem ipsum",
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "title": "Dolor sit",
+        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
+      },
+      {
+        "title": "Amet consectetur",
+        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+      }
+    ],
+    "makers": {
+      "title": "Meet the makers",
+      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    },
+    "cta": {
+      "title": "Join the adventure",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "button": "Sign up"
+    }
   },
   "footer": "Kaia & Tata Publishing — Puzzles and Books Company"
 }

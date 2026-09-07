@@ -36,7 +36,15 @@ directly with `?lang=pl` (etc.); the choice persists in `localStorage`.
 ```
 index.html                 entry HTML + fonts
 src/index.jsx              app mount
-src/App.jsx                landing page (hero + 4 showcase sections + signup + lang switcher)
+src/App.jsx                router setup (/ and /about) + base
+src/Layout.jsx             shared shell: topbar, footer, language state
+src/pages/Home.jsx         landing page (hero + 4 showcase sections + signup)
+src/pages/About.jsx        about / purpose page (mission, values, makers)
+src/LangMenu.jsx           flag language switcher
+src/langs.js               supported languages
+src/lang-context.js        shared lang state (useLang)
+src/nav.js                 nav link data
+src/flags.jsx              inline SVG flags (cross-OS)
 src/i18n.js                locale loader (dict, DEFAULT_LANG)
 src/locales/*.json         translations (en, pl, de, fr, es, it) + INDEX.md
 src/styles.css             coloring-book theme

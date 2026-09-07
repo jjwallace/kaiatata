@@ -2,8 +2,8 @@
 
 Per-locale JSON dictionaries for the site copy. Every file has the **same key
 shape** (see `en.json`, the source of truth). Loaded by `../i18n.js` and read
-reactively through `tr()` in `../App.jsx`, so switching the flag re-renders all
-text.
+reactively through `tr()` (from `useLang()`) in the pages, so switching the flag
+re-renders all text across both routes.
 
 ## Files
 
@@ -20,27 +20,38 @@ text.
 
 ```jsonc
 {
-  "nav":     { "adventure", "custom", "puzzles", "publishing" },  // nav pill / topbar labels
+  "nav":     { "adventure", "custom", "puzzles", "publishing", "about" },  // nav labels
   "hero":    { "title", "subtitle", "cta" },
   "sections": {
     "adventure": { "tag", "title", "body", "cta", "alt" },        // "alt" = image alt text
     "custom":    { ... }, "puzzles": { ... }, "publishing": { ... }
   },
   "join":    { "title", "body", "placeholder", "button", "thanks" },
+  "about": {                                                      // /about page
+    "eyebrow", "title", "intro",
+    "mission": { "title", "body" },
+    "story":   { "title", "body": ["para", ...] },                // body is an array of paragraphs
+    "valuesTitle",
+    "values":  [ { "title", "body" }, ... ],                      // value cards
+    "makers":  { "title", "body" },
+    "cta":     { "title", "body", "button" }
+  },
   "footer":  "..."                                                // brand line
 }
 ```
 
 Section keys (`adventure`, `custom`, `puzzles`, `publishing`) match the section
-`id`s in `App.jsx`; nav keys match the `navLinks[].key`s.
+`id`s in `pages/Home.jsx`; nav keys match `nav.js`. The `about.*` block feeds
+`pages/About.jsx` — currently **lorem ipsum placeholder** copy (real copy TBD);
+the structural labels (titles, `eyebrow`, `button`) are translated per locale.
 
 ## Adding a language
 
 1. Copy `en.json` → `<code>.json` and translate every value (keep the keys).
 2. Register it in `../i18n.js` (`import` + add to `dictionaries`).
-3. Add `{ code: '<code>', flag: '🇽🇽', label: 'Native name' }` to `LANGS` in
-   `../App.jsx`.
-4. Verify with `…/?lang=<code>`.
+3. Add `{ code: '<code>', label: 'Native name' }` to `LANGS` in `../langs.js`.
+4. Add an SVG flag for the code in `../flags.jsx`.
+5. Verify with `…/?lang=<code>`.
 
 ## Rules
 

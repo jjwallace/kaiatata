@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@solidjs/router": "^1.0.0",
     "solid-js": "^1.9.3"
   },
   "devDependencies": {

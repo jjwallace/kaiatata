@@ -3,7 +3,8 @@
     "adventure": "Przygoda",
     "custom": "Na zamówienie",
     "puzzles": "Zagadki",
-    "publishing": "Wydaj"
+    "publishing": "Wydaj",
+    "about": "O nas"
   },
   "hero": {
     "title": "Zagadki i książki, które zabierają dzieci w podróż.",
@@ -46,6 +47,46 @@
     "placeholder": "ty@przyklad.pl",
     "button": "Informujcie mnie",
     "thanks": "Dziękujemy — witaj na pokładzie, odkrywco! 🧭"
+  },
+  "about": {
+    "eyebrow": "O nas",
+    "title": "Nasz cel",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "mission": {
+      "title": "Nasza misja",
+      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+    },
+    "story": {
+      "title": "Nasza historia",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+      ]
+    },
+    "valuesTitle": "W co wierzymy",
+    "values": [
+      {
+        "title": "Lorem ipsum",
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "title": "Dolor sit",
+        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
+      },
+      {
+        "title": "Amet consectetur",
+        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+      }
+    ],
+    "makers": {
+      "title": "Twórcy",
+      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    },
+    "cta": {
+      "title": "Dołącz do przygody",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "button": "Zapisz się"
+    }
   },
   "footer": "Kaia & Tata Publishing — zagadki i książki dla dzieci"
 }

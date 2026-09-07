@@ -3,7 +3,8 @@
     "adventure": "Aventure",
     "custom": "Sur mesure",
     "puzzles": "Jeux",
-    "publishing": "Publier"
+    "publishing": "Publier",
+    "about": "À propos"
   },
   "hero": {
     "title": "Des jeux et des livres qui emmènent les enfants loin.",
@@ -46,6 +47,46 @@
     "placeholder": "vous@exemple.fr",
     "button": "Tenez-moi au courant",
     "thanks": "Merci — bienvenue à bord, explorateur ! 🧭"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "title": "Notre raison d'être",
+    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "mission": {
+      "title": "Notre mission",
+      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat."
+    },
+    "story": {
+      "title": "Notre histoire",
+      "body": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+      ]
+    },
+    "valuesTitle": "Ce en quoi nous croyons",
+    "values": [
+      {
+        "title": "Lorem ipsum",
+        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      },
+      {
+        "title": "Dolor sit",
+        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
+      },
+      {
+        "title": "Amet consectetur",
+        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
+      }
+    ],
+    "makers": {
+      "title": "Les créateurs",
+      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    },
+    "cta": {
+      "title": "Rejoignez l'aventure",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "button": "S'inscrire"
+    }
   },
   "footer": "Kaia & Tata Publishing — jeux et livres pour enfants"
 }
