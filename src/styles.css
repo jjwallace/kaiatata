@@ -119,8 +119,15 @@ body {
   transform: translateY(-1px);
 }
 .lang-flag {
-  font-size: 18px;
-  line-height: 1;
+  display: inline-flex;
+  line-height: 0;
+}
+.flag-svg {
+  display: block;
+  height: 15px;
+  width: auto;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(58, 42, 26, 0.18);
 }
 .lang-code {
   letter-spacing: 0.5px;
@@ -175,8 +182,9 @@ body {
   padding: 4px 9px;
   font-size: 13px;
 }
-.lang.on-dark .lang-flag {
-  font-size: 16px;
+.lang.on-dark .flag-svg {
+  height: 14px;
+  box-shadow: 0 0 0 1px rgba(246, 239, 225, 0.35);
 }
 
 /* ---- logo band (full-bleed paper strip across the sand) ---- */

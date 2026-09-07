@@ -1,5 +1,6 @@
 import { createSignal, onMount, onCleanup, For, Show } from 'solid-js';
 import { dict, DEFAULT_LANG } from './i18n';
+import { Flag } from './flags';
 
 // prefix with Vite's base URL so assets resolve under the /kaiatata/ subpath
 const asset = (p) => `${import.meta.env.BASE_URL}${p}`;
@@ -17,14 +18,14 @@ const navLinks = [
 ];
 
 // English is the default. Each code must have a matching src/locales/<code>.json
-// registered in src/i18n.js.
+// registered in src/i18n.js, plus an SVG in src/flags.jsx.
 const LANGS = [
-  { code: 'en', flag: '🇬🇧', label: 'English' },
-  { code: 'pl', flag: '🇵🇱', label: 'Polski' },
-  { code: 'de', flag: '🇩🇪', label: 'Deutsch' },
-  { code: 'fr', flag: '🇫🇷', label: 'Français' },
-  { code: 'es', flag: '🇪🇸', label: 'Español' },
-  { code: 'it', flag: '🇮🇹', label: 'Italiano' },
+  { code: 'en', label: 'English' },
+  { code: 'pl', label: 'Polski' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'fr', label: 'Français' },
+  { code: 'es', label: 'Español' },
+  { code: 'it', label: 'Italiano' },
 ];
 
 // Flag language switcher. Rendered twice (hero + topbar); each instance keeps
@@ -54,7 +55,7 @@ function LangMenu(props) {
           setOpen(!open());
         }}
       >
-        <span class="lang-flag">{current().flag}</span>
+        <span class="lang-flag"><Flag code={current().code} /></span>
         <span class="lang-code">{current().code.toUpperCase()}</span>
         <span class="lang-caret" aria-hidden="true">▾</span>
       </button>
@@ -71,7 +72,7 @@ function LangMenu(props) {
                     setOpen(false);
                   }}
                 >
-                  <span class="lang-flag">{l.flag}</span>
+                  <span class="lang-flag"><Flag code={l.code} /></span>
                   <span>{l.label}</span>
                 </button>
               </li>
