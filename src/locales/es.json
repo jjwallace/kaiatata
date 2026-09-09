@@ -61,37 +61,16 @@
         "Reunir a una familia a través de las fronteras es lento, costoso y pocas veces justo. Es la causa que nos dio origen, y la que todavía perseguimos — página a página, historia a historia, un regreso a casa tras otro."
       ]
     },
-    "story": {
-      "title": "Nuestra historia",
-      "body": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      ]
-    },
-    "valuesTitle": "En qué creemos",
-    "values": [
-      {
-        "title": "Lorem ipsum",
-        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-      },
-      {
-        "title": "Dolor sit",
-        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
-      },
-      {
-        "title": "Amet consectetur",
-        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
-      }
-    ],
-    "makers": {
-      "title": "Los creadores",
-      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    "giving": {
+      "title": "A dónde va",
+      "body": "Nunca se trató solo de libros. A medida que crecemos, parte de lo que generamos se destina a las familias más lejos del reencuentro — las que enfrentan costes legales y puertas cerradas sin manera de pagar ni lo uno ni lo otro. Cada compra es un pequeño voto para que una familia vuelva a estar junta."
     },
     "cta": {
       "title": "Únete a la aventura",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "body": "Nuevos libros, pasatiempos y, de vez en cuando, alguna buena noticia — solo cuando hay algo que merezca la pena compartir.",
       "button": "Suscríbete"
-    }
+    },
+    "benediction": "Desde donde sea que leas esto, y sea a quien sea que eches de menos: la historia no ha terminado. Solo se está contando a través de una distancia más larga por un tiempo."
   },
   "footer": "Kaia & Tata Publishing — juegos y libros para niños"
 }

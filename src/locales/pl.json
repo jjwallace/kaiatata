@@ -53,7 +53,7 @@
     "title": "Nasz cel",
     "intro": "Niektóre rodziny żyją pod jednym dachem. Inne — pod jednym niebem.",
     "mission": {
-      "dedication": "Poświęcone ojcom, którzy zostali, i rodzinom, które łączą się na nowo ponad granicami",
+      "dedication": "Poświęcone ojcom pozostawionym w tyle i rodzinom, które łączą się na nowo ponad granicami",
       "title": "Dlaczego istniejemy",
       "body": [
         "Dla niektórych ojców granica przebiega przez sam środek rodziny: pieniądze, których nie ma, czas, którego nie może sobie pozwolić, obowiązki, które trzymają go w miejscu, podczas gdy jego dzieci dorastają o ocean stąd. To jest dla ojców, którzy wciąż czekają, i dla rodzin, które odnajdują drogę powrotną. Nie możemy cofnąć odległości — możemy tylko utrzymać dłoń wyciągniętą ponad nią, strona po stronie.",
@@ -61,37 +61,16 @@
         "Łączenie rodziny ponad granicami bywa powolne, kosztowne i rzadko sprawiedliwe. To cel, dla którego powstaliśmy, i ten, do którego wciąż dążymy — strona po stronie, historia po historii, powrót po powrocie."
       ]
     },
-    "story": {
-      "title": "Nasza historia",
-      "body": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      ]
-    },
-    "valuesTitle": "W co wierzymy",
-    "values": [
-      {
-        "title": "Lorem ipsum",
-        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-      },
-      {
-        "title": "Dolor sit",
-        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
-      },
-      {
-        "title": "Amet consectetur",
-        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
-      }
-    ],
-    "makers": {
-      "title": "Twórcy",
-      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    "giving": {
+      "title": "Dokąd to trafia",
+      "body": "Nigdy nie chodziło tylko o książki. W miarę jak rośniemy, część tego, co wypracowujemy, trafia do rodzin najbardziej oddalonych od ponownego spotkania — tych, które stają przed kosztami prawnymi i zamkniętymi drzwiami, nie mając czym zapłacić za jedno ani za drugie. Każdy zakup to mały głos za tym, by rodzina znów była razem."
     },
     "cta": {
       "title": "Dołącz do przygody",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "body": "Nowe książki, łamigłówki i od czasu do czasu dobra wiadomość — wysyłane tylko wtedy, gdy naprawdę jest się czym podzielić.",
       "button": "Zapisz się"
-    }
+    },
+    "benediction": "Skądkolwiek to czytasz i za kimkolwiek tęsknisz: ta historia się nie skończyła. Po prostu przez pewien czas opowiadana jest przez większą odległość."
   },
   "footer": "Kaia & Tata Publishing — zagadki i książki dla dzieci"
 }

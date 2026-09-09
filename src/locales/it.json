@@ -61,37 +61,16 @@
         "Riunire una famiglia oltre i confini è lento, costoso e raramente giusto. È la causa per cui siamo nati, e quella verso cui stiamo ancora andando — pagina dopo pagina, storia dopo storia, un ritorno a casa dopo l'altro."
       ]
     },
-    "story": {
-      "title": "La nostra storia",
-      "body": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-      ]
-    },
-    "valuesTitle": "In cosa crediamo",
-    "values": [
-      {
-        "title": "Lorem ipsum",
-        "body": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-      },
-      {
-        "title": "Dolor sit",
-        "body": "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae."
-      },
-      {
-        "title": "Amet consectetur",
-        "body": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur."
-      }
-    ],
-    "makers": {
-      "title": "I creatori",
-      "body": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum."
+    "giving": {
+      "title": "Dove va a finire",
+      "body": "Non è mai stato solo una questione di libri. Man mano che cresciamo, una parte di ciò che ricaviamo va alle famiglie più lontane dal ricongiungimento — quelle che affrontano spese legali e porte chiuse senza poter pagare né le une né le altre. Ogni acquisto è un piccolo voto perché una famiglia possa tornare a stare insieme."
     },
     "cta": {
       "title": "Unisciti all'avventura",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "body": "Nuovi libri, giochi e, ogni tanto, una buona notizia — solo quando c'è qualcosa che vale la pena condividere.",
       "button": "Iscriviti"
-    }
+    },
+    "benediction": "Ovunque tu stia leggendo questo, e chiunque ti manchi: la storia non è finita. Solo, per un po', viene raccontata attraverso una distanza più lunga."
   },
   "footer": "Kaia & Tata Publishing — giochi e libri per bambini"
 }
