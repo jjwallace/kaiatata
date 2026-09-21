@@ -4,7 +4,7 @@ import { dict, DEFAULT_LANG } from './i18n';
 import { isKnownLang } from './langs';
 import { LangContext } from './lang-context';
 import { LangMenu } from './LangMenu';
-import { sectionLinks, pageLinks } from './nav';
+import { pageLinks } from './nav';
 
 // Shared shell for every route. Mounted once (as the Router root) so the
 // language choice and scroll state persist while pages swap underneath.
@@ -59,9 +59,6 @@ export default function Layout(props) {
           </A>
           <div class="topbar-right">
             <nav class="topbar-nav">
-              <For each={sectionLinks}>
-                {(l) => <A href={l.href}>{tr().nav[l.key]}</A>}
-              </For>
               <For each={pageLinks}>
                 {(l) => (
                   <A href={l.href} end>
