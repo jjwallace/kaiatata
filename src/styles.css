@@ -248,10 +248,12 @@ body {
   box-shadow: 0 5px 0 var(--sepia-deep);
 }
 
-/* ---- bottom stamp (large, centered, after signup) ---- */
+/* ---- bottom stamp (large, centered, after signup) + pill below it ---- */
 .bottom-stamp {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   padding: 8px 0 48px;
 }
 .bottom-stamp img {

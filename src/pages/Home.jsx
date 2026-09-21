@@ -2,7 +2,7 @@ import { createSignal, createEffect, For } from 'solid-js';
 import { A, useLocation } from '@solidjs/router';
 import { useLang } from '../lang-context';
 import { LangMenu } from '../LangMenu';
-import { sectionLinks } from '../nav';
+import { pageLinks } from '../nav';
 
 // prefix with Vite's base URL so assets resolve under the /kaiatata/ subpath
 const asset = (p) => `${import.meta.env.BASE_URL}${p}`;
@@ -50,8 +50,12 @@ export default function Home() {
         </div>
         <img class="title-banner" src={TITLE} alt="Kaia & Tata Publishing — Puzzles and Books Company" />
         <nav class="hero-pills">
-          <For each={sectionLinks}>
-            {(l) => <A href={l.href}>{tr().nav[l.key]}</A>}
+          <For each={pageLinks}>
+            {(l) => (
+              <A href={l.href} end>
+                {tr().nav[l.key]}
+              </A>
+            )}
           </For>
         </nav>
       </div>
@@ -101,6 +105,15 @@ export default function Home() {
 
       <div class="bottom-stamp">
         <img src={LOGO} alt="Kaia & Tata Publishing — Puzzles and Books Company stamp" />
+        <nav class="hero-pills">
+          <For each={pageLinks}>
+            {(l) => (
+              <A href={l.href} end>
+                {tr().nav[l.key]}
+              </A>
+            )}
+          </For>
+        </nav>
       </div>
     </main>
   );
